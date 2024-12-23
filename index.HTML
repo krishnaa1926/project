@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: linear-gradient(135deg, #691cbc, #045ffb);
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: left;
+            background: #333;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f0a500;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .about, .skills, .projects {
+            margin-bottom: 3rem;
+        }
+
+        .about h2, .skills h2, .projects h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .about p {
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+        .about p:hover{
+            background: #fafafb;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 100%;
+            
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            transform: translateY(-10px);
+            box-shadow: 0 8px 5px lightskyblue;
+        }
+
+        .skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            background: #2575fc;
+            color: #fff;
+            margin: 0.5rem;
+            padding: 0.8rem 1.2rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .skills li:hover {
+            transform: scale(1.1);
+            background: #6a11cb;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+
+        }
+
+        .project {
+            background: #fff;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+           transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        } 
+
+        .project h3 {
+            margin: 0 0 0.8rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .project p {
+            margin: 0;
+            color: #555;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 1rem;
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .project a:hover {
+            color: #6a11cb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background: #333;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .project {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>krishna patel</h1>
+        <p>Creative Front-End Developer and learner | HTML & CSS Specialist</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm krishna patel , a passionate front-end developer who loves crafting visually stunning and user-friendly websites. With an eye for detail and a strong foundation in HTML and CSS, I specialize in bringing designs to life and optimizing user experiences across all devices.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive Design</li>
+                <li>Flexbox & Grid Layouts</li>
+                <li>CSS Animations</li>
+                <li>Bootstrap</li>
+                <li>UI/UX Design</li>
+                <li>Cross-Browser Compatibility</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Highlighted Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A sleek and responsive portfolio to showcase my development and design skills, featuring custom animations and modern layouts.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Interactive Landing Page</h3>
+                <p>An engaging landing page built with advanced CSS animations and responsive techniques to ensure a seamless user experience.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Responsive Blog</h3>
+                <p>A blog layout designed with CSS Grid and Flexbox, providing a clean and adaptable interface across devices.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>E-commerce Product Page</h3>
+                <p>A modern product page showcasing advanced CSS techniques for dynamic styling and hover effects.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 krishna patel. All rights reserved. Designed with passion using HTML & CSS.</p>
+    </footer>
+</body>
+</html>
